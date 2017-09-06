@@ -18,3 +18,14 @@
   </li>
 </ul>
 
+<ckeditor
+[(ngModel)]="ckeditorContent"
+[config]="{uiColor: '#99000'}"
+[readonly]="false"
+(change)="onChange($event)"
+(ready)="onReady($event)"
+(focus)="onFocus($event)"
+(blur)="onBlur($event)"
+debounce="500">
+</ckeditor>
+
